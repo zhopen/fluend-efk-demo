@@ -14,8 +14,8 @@ services:
         tag: httpd.access
 
   fluentd:
-    image: kurraj/fluentd_castom:latest
-    #image: zhopen/fluentd-es:v1.14
+          #image: kurraj/fluentd_castom:latest
+    image: zhopen/fluentd-es:v1.14.5-v5.1.5
     container_name: fluentd
     volumes:
       - ./fluentd/conf:/fluentd/etc
